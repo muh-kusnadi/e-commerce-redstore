@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
    <!-- start header section -->
@@ -21,8 +23,8 @@
                <ul id="MenuItems">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="products.html">Products</a></li>
-                  <li><a href="">About</a></li>
-                  <li><a href="">Contact</a></li>
+                  <li><a href="#testimonial">Testimonial</a></li>
+                  <li><a href="#footer">Contact</a></li>
                   <li><a href="account.html">Account</a></li>
                </ul>
             </nav>
@@ -240,7 +242,7 @@
    <!-- end offer -->
 
    <!-- start testimonial -->
-   <div class="testimonial">
+   <div class="testimonial" id="testimonial">
       <div class="small-container">
          <div class="row">
             <div class="col-3">
@@ -312,7 +314,7 @@
    <!-- end brands -->
 
    <!-- start footer -->
-   <div class="footer">
+   <div class="footer" id="footer">
       <div class="container">
          <div class="row">
             <div class="footer-col-1">
@@ -365,6 +367,11 @@
             MenuItems.style.maxHeight = "0px";
          }
       }
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+         speed: 1000,
+         speedAsDuration: true
+      });
    </script>
 </body>
 </html>
