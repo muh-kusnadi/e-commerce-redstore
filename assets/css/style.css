@@ -415,7 +415,7 @@ th:last-child {
     max-width: 300px;
     padding: 0 20px;
     position: absolute;
-    top: 130px;
+    top: 100px;
     transition: transform 1s;
 }
 form input {
@@ -434,8 +434,11 @@ form .btn {
 form .btn:focus {
     outline: none;
 }
-#loginForm {
+/* #loginForm {
     left: -300px;
+} */
+#registerForm {
+    right: -300px;
 }
 #RegForm {
     left: 0;
@@ -449,7 +452,7 @@ form a {
     background: #ff523b;
     height: 3px;
     margin-top: 8px;
-    transform: translateX(100px);
+    transform: translateX(0px);
     transition: transform 1s;
 }
 
